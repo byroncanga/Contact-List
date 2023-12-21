@@ -4,9 +4,15 @@
   box-sizing: border-box;
 }
 body {
-  display: grid;
-  place-content: center;
   background-color: azure;
+  height: 100vh;
+}
+.box {
+  margin: 80px !important;
+}
+.conta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .cards {
   position: relative;
@@ -15,11 +21,10 @@ body {
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
-  transition: 0.5s;
-  margin-bottom: 80px;
 }
 .cards:hover {
   height: 350px;
+  transition: 0.5s;
 }
 .imgBx {
   position: absolute;
@@ -33,10 +38,11 @@ body {
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.35);
   overflow: hidden;
   transition: 0.5s;
+  z-index: 100;
 }
 .cards:hover .imgBx {
-  width: 180px;
-  height: 180px;
+  width: 220px;
+  height: 200px;
 }
 .imgBx img {
   position: absolute;
@@ -59,9 +65,29 @@ body {
   padding: 10px;
   text-align: center;
   width: 100%;
-  transition: 0.5s;
+  transition: 0.9s;
   transform: translateY(120px);
 }
 .cards:hover .details {
   transform: translateY(0);
+}
+.buttons {
+  font-size: 20px;
+  color: rgb(46, 46, 46);
+  cursor: pointer;
+}
+.btn-edit:hover {
+  color: blue;
+  font-size: 25px;
+  transition: 0.2s;
+}
+.btn-delete:hover {
+  color: red;
+  font-size: 25px;
+  transition: 0.2s;
+}
+.btn-whatsapp:hover {
+  color: green;
+  font-size: 25px;
+  transition: 0.2s;
 }

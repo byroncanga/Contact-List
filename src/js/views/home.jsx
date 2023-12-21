@@ -1,15 +1,14 @@
 import React from "react";
 import CardProfile from "../component/CardProfile.jsx";
 
-export const Home = () => (
-  <div>
-    <section className="container">
-      <div className="row">
-        <CardProfile />
-        <CardProfile />
-        <CardProfile />
-        <CardProfile />
-      </div>
-    </section>
-  </div>
-);
+export const Home = () => {
+  return (
+    <div>
+      <section className="box">
+        <div className="row">
+          <CardProfile />
+        </div>
+      </section>
+    </div>
+  );
+};
